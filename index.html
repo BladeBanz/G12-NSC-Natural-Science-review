@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Messenger: @Rekz Banz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #19124e;
+      color: #fefeff;
+    }
+    h1 { color: #fefeff; }
+    button {
+      padding: 15px 30px;
+      font-size: 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover { background-color: #0056b3; }
+    button:disabled { background-color: #ccc; cursor: default; }
+    .question { margin-bottom: 25px; }
+    .correct { color: #00ff88; font-weight: bold; }
+    .wrong { color: #ff5577; font-weight: bold; }
+    .highlight { margin-top: 10px; }
+    input[type="radio"] { transform: scale(1.5); margin-right: 10px; }
+    #finishBtn { font-size: 2em; padding: .1em 1em; }
+    .nav-buttons { margin-top: 20px; display: flex; gap: 10px; }
+
+    #codeInput {
+      font-size: 15px;
+      padding: 10px 20px;
+      width: 300px;
+      border-radius: 8px;
+      border: 2px solid #888;
+    }
+
+    #codeInput::placeholder { font-size: 15px; }
+
+    /* Smaller font for Enter Access Code */
+    #accessSection h2 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    /* Style for filename display above access code */
+    #fileDisplay {
+      font-size: 1.3em;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #9fe3ff;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="accessSection">
+    <p id="fileDisplay"></p> <!-- NEW filename display -->
+    <h2>Enter Access Code</h2>
+    <input type="password" id="codeInput" placeholder="Enter code here" />
+    <br>
+    <button type="button" id="accessSubmit" style="padding:10px 40px; font-size:20px;">Login</button>
+    <p id="message" aria-live="polite"></p>
+    <br>
+    <p id="tipsArea">Loading tips...</p>
+  </div>
+
+  <div id="mainContent" style="display:none;">
+    <div id="reviewerSection">
+      <h1>Reviewer: NSC Natural Science</h1>
+ 
+ <!-- PLANT REPRODUCTION -->
+<details open>
+  <summary>🌱 Plant Reproduction</summary>
+  <ul>
+    <li><strong>Plant:</strong> Living organism with stems, leaves, roots; performs photosynthesis.</li>
+    <li><strong>Reproduction:</strong> Process by which organisms produce offspring (sexual or asexual).</li>
+    <li><strong>Types of Plants:</strong> Nonvascular (Bryophytes) and Vascular (Tracheophytes).</li>
+    <li><strong>Diploid Phase:</strong> Begins with zygote → mature sporophyte → meiosis → haploid spores.</li>
+    <li><strong>Haploid Phase:</strong> Begins with spore → mitosis → gametophyte → gametes (sperm, egg).</li>
+    <li><strong>Nonvascular Plants:</strong> Lack xylem & phloem (e.g., mosses, liverworts).</li>
+    <li><strong>Seedless Vascular Plants:</strong> Have xylem & phloem; reproduce with spores (e.g., ferns).</li>
+    <li><strong>Seed Plants (Spermatophytes):</strong> Gymnosperms + Angiosperms; seeds have embryo + seed coat.</li>
+    <li><strong>Monocots vs Dicots:</strong> Monocots—1 cotyledon (corn); Dicots—2 cotyledons (peanut).</li>
+    <li><strong>Gymnosperms:</strong> Produce naked seeds on cones.</li>
+    <li><strong>Angiosperms:</strong> Flowering plants with sepals, petals, stamens, pistils.</li>
+    <li><strong>Double Fertilization:</strong> Produces zygote + endosperm.</li>
+    <li><strong>Fruit:</strong> Ripened ovary; parts—exocarp, mesocarp, endocarp.</li>
+    <li><strong>Importance of Plants:</strong> Provide food, oxygen, medicine, clothing, shelter.</li>
+  </ul>
+  <h3>🌿 Possible Exam Questions</h3>
+  <ul>
+    <li>Q: What are the two main types of plants? <br><strong>A:</strong> Nonvascular (Bryophytes) and Vascular (Tracheophytes).</li>
+    <li>Q: What occurs during double fertilization in angiosperms? <br><strong>A:</strong> Formation of zygote and endosperm.</li>
+    <li>Q: Give two examples of seedless vascular plants. <br><strong>A:</strong> Ferns and horsetails.</li>
+  </ul>
+</details>
+
+<!-- ANIMAL REPRODUCTION -->
+<details>
+  <summary>🐾 Animal Reproduction</summary>
+  <ul>
+    <li><strong>Asexual Reproduction:</strong> Offspring genetically identical to parent.</li>
+    <li><strong>Methods:</strong>
+      <ul>
+        <li>Budding – Offspring grows out of parent (e.g., Hydra).</li>
+        <li>Binary Fission – Splits into two individuals (e.g., Euglena).</li>
+        <li>Fragmentation – Fragments regrow (e.g., Flatworms).</li>
+        <li>Regeneration – Regrows lost parts (e.g., Lizard tail).</li>
+      </ul>
+    </li>
+    <li><strong>Sexual Reproduction:</strong> Combination of genetic material from two parents.</li>
+    <li><strong>External Fertilization:</strong> Occurs outside body (e.g., fish, amphibians).</li>
+    <li><strong>Internal Fertilization:</strong> Occurs inside female body.</li>
+    <li><strong>Oviparity:</strong> Eggs laid outside (e.g., birds, reptiles).</li>
+    <li><strong>Ovoviviparity:</strong> Eggs develop inside; no placenta (e.g., some sharks).</li>
+    <li><strong>Viviparity:</strong> Embryo nourished via placenta (e.g., mammals).</li>
+  </ul>
+  <h3>🐣 Possible Exam Questions</h3>
+  <ul>
+    <li>Q: What is the main advantage of sexual reproduction? <br><strong>A:</strong> Genetic variation.</li>
+    <li>Q: Example of an organism that reproduces by budding? <br><strong>A:</strong> Hydra.</li>
+    <li>Q: Define viviparity. <br><strong>A:</strong> Development inside the womb, nourished by placenta.</li>
+  </ul>
+</details>
+
+<!-- GENETICS -->
+<details>
+  <summary>🧬 Genetics & Genetic Engineering</summary>
+  <ul>
+    <li><strong>Flow of Genetic Information:</strong> DNA → mRNA → Protein synthesis.</li>
+    <li><strong>Genetic Engineering:</strong> Modifying DNA to add new traits.</li>
+    <li><strong>GMO Benefits:</strong>
+      <ul>
+        <li>Pest resistance</li>
+        <li>Higher yields</li>
+        <li>Growth in harsh environments</li>
+        <li>Cheaper medicine production</li>
+      </ul>
+    </li>
+  </ul>
+  <h3>🧫 Possible Exam Questions</h3>
+  <ul>
+    <li>Q: What molecule carries genetic code from DNA? <br><strong>A:</strong> mRNA.</li>
+    <li>Q: List one benefit of genetic modification. <br><strong>A:</strong> Pest resistance in crops.</li>
+  </ul>
+</details>
+
+<!-- CELL STRUCTURE -->
+<details>
+  <summary>🔬 Cell Organelles & Structures</summary>
+  <ul>
+    <li><strong>Cell Membrane:</strong> Controls movement in/out of cell; selectively permeable.</li>
+    <li><strong>Cell Wall:</strong> Protection & structure (plants, algae, fungi, bacteria).</li>
+    <li><strong>Cytoplasm:</strong> Site of chemical reactions.</li>
+    <li><strong>Nucleus:</strong> Controls activities; stores genetic info.</li>
+    <li><strong>Nucleolus:</strong> Produces ribosomes.</li>
+    <li><strong>Chloroplast:</strong> Site of photosynthesis (plants only).</li>
+    <li><strong>Mitochondria:</strong> Produces ATP (energy).</li>
+    <li><strong>Golgi Apparatus:</strong> Modifies, packages proteins/lipids.</li>
+    <li><strong>Rough ER:</strong> Synthesizes proteins.</li>
+    <li><strong>Smooth ER:</strong> Synthesizes lipids & detoxifies.</li>
+    <li><strong>Ribosomes:</strong> Protein synthesis.</li>
+    <li><strong>Vacuole:</strong> Storage; large in plants, small in animals.</li>
+    <li><strong>Lysosome:</strong> Breaks down waste (animal cells).</li>
+    <li><strong>Peroxisome:</strong> Detoxifies harmful substances.</li>
+    <li><strong>Centrioles:</strong> Aid in cell division (animal only).</li>
+  </ul>
+  <h3>⚗️ Key Differences Between Plant & Animal Cells</h3>
+  <ul>
+    <li>Cell Wall: Present in plants, absent in animals.</li>
+    <li>Vacuole: Large in plants, small/multiple in animals.</li>
+    <li>Chloroplast: Present in plants, absent in animals.</li>
+    <li>Centrioles: Absent in plants, present in animals.</li>
+  </ul>
+  <h3>🧠 Possible Exam Questions</h3>
+  <ul>
+    <li>Q: What is the function of mitochondria? <br><strong>A:</strong> Produces energy (ATP).</li>
+    <li>Q: Which organelle is found only in plant cells? <br><strong>A:</strong> Chloroplast.</li>
+    <li>Q: Which structure controls what enters/leaves the cell? <br><strong>A:</strong> Cell membrane.</li>
+  </ul>
+</details>
+
+<!-- PHOTOSYNTHESIS & CELLULAR RESPIRATION -->
+<details>
+  <summary>☀️ Photosynthesis & Cellular Respiration</summary>
+  <ul>
+    <li><strong>Photosynthesis:</strong> Converts light energy → glucose.</li>
+    <li><strong>Equation:</strong> 6CO₂ + 6H₂O + light → C₆H₁₂O₆ + 6O₂</li>
+    <li><strong>Light-Dependent Reactions:</strong> Occur in thylakoids; produce ATP, NADPH, O₂.</li>
+    <li><strong>Light-Independent Reactions (Calvin Cycle):</strong> Occur in stroma; produce glucose.</li>
+    <li><strong>Key Structures:</strong> Chloroplast, Thylakoid, Grana, Stroma, ATP Synthase.</li>
+    <li><strong>Cellular Respiration:</strong> Converts glucose → ATP.</li>
+    <li><strong>Equation:</strong> C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O + ATP.</li>
+    <li><strong>Stages:</strong>
+      <ul>
+        <li>Glycolysis (Cytoplasm) → 2 ATP</li>
+        <li>Krebs Cycle (Mitochondria) → 2 ATP</li>
+        <li>Electron Transport Chain → ~34 ATP</li>
+      </ul>
+    </li>
+    <li><strong>Total ATP:</strong> 36–38 per glucose molecule.</li>
+  </ul>
+  <h3>💡 Possible Exam Questions</h3>
+  <ul>
+    <li>Q: Write the equation for photosynthesis. <br><strong>A:</strong> 6CO₂ + 6H₂O + light → C₆H₁₂O₆ + 6O₂.</li>
+    <li>Q: Where does the Calvin Cycle occur? <br><strong>A:</strong> In the stroma of chloroplasts.</li>
+    <li>Q: Total ATP produced in cellular respiration? <br><strong>A:</strong> 36–38 ATP.</li>
+  </ul>
+</details>
+ 
+      <button onclick="showQuiz()">Start Quiz</button>
+    </div>
+
+    <div id="quizSection" style="display:none;">
+      <h1>Quiz: NSC Natural Science</h1>
+      <p style="font-size: 15px; font-weight: 600; margin: 0;">Multiple-Choice Quiz (random items)</p>
+      <form id="quizForm"></form>
+
+      <div class="nav-buttons">
+        <button id="finishBtn">Score</button>
+        <button type="button" onclick="refreshQuiz()">Restart Quiz</button>
+        <button type="button" onclick="backToReviewer()">Reviewer</button>
+      </div>
+      <div id="result" class="highlight"></div>
+    </div>
+  </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  // ===== Display filename on login page =====
+  const quizTitleEl = document.querySelector("#quizSection h1");
+  const displayFileName = quizTitleEl ? quizTitleEl.textContent.replace("Quiz: ", "").trim() : "index.html";
+  const fileDisplay = document.getElementById("fileDisplay");
+  if (fileDisplay) fileDisplay.textContent = displayFileName;
+
+  // ===== SETTINGS =====
+  const BIN_URL_CODE = "https://api.jsonbin.io/v3/b/6912958fd0ea881f40e0cafc/latest";
+  const BIN_URL_TIPS = "https://api.jsonbin.io/v3/b/68f1b652ae596e708f180d5d/latest";
+  const MASTER_KEY_CODE = "$2a$10$CvK4w8DTXZ1//5H1cpGQIerIT8Kzvk0FQHosdNm.XS0Q9n6sMmaf6";
+  const MASTER_KEY_TIPS = "$2a$10$CvK4w8DTXZ1//5H1cpGQIerIT8Kzvk0FQHosdNm.XS0Q9n6sMmaf6";
+
+  // === LOGGER BIN (Access Log) ===
+  const BIN_URL_LOG = "https://api.jsonbin.io/v3/b/6911a123d0ea881f40df102a";
+  const MASTER_KEY_LOG = MASTER_KEY_CODE;
+
+  // === SCORE LOG BIN (New) ===
+  const BIN_URL_SCORE = "https://api.jsonbin.io/v3/b/6912985cd0ea881f40e0cf7c";
+  const MASTER_KEY_SCORE = MASTER_KEY_CODE;
+
+  // ===== ELEMENTS =====
+  const accessSection = document.getElementById("accessSection");
+  const mainContent = document.getElementById("mainContent");
+  const codeInput = document.getElementById("codeInput");
+  const accessSubmit = document.getElementById("accessSubmit");
+  const message = document.getElementById("message");
+  const tipsArea = document.getElementById("tipsArea");
+
+  // ===== HELPERS =====
+  function findStringKey(obj, keyName) {
+    if (!obj || typeof obj !== "object") return undefined;
+    for (const k in obj) {
+      if (k.toLowerCase() === keyName.toLowerCase() && typeof obj[k] === "string") {
+        return obj[k];
+      }
+      const v = obj[k];
+      if (typeof v === "object") {
+        const nested = findStringKey(v, keyName);
+        if (nested) return nested;
+      }
+    }
+  }
+
+  async function getDeviceInfo() {
+    const uaData = navigator.userAgentData || {};
+    const ua = navigator.userAgent;
+    const platform = navigator.platform;
+    const language = navigator.language;
+    const screenResolution = `${window.screen.width}x${window.screen.height}`;
+    const browserVersion = uaData.brands
+      ? uaData.brands.map(b => `${b.brand} ${b.version}`).join(", ")
+      : ua;
+
+    // Determine general device type
+    const uaLower = ua.toLowerCase();
+    let deviceType = "desktop";
+    if (/mobi|iphone|android/i.test(uaLower)) {
+      deviceType = "mobile";
+    } else if (/tablet|ipad|nexus 7|nexus 10/i.test(uaLower)) {
+      deviceType = "tablet";
+    }
+
+    // Get approximate IP + region/country info (non-identifying)
+    let networkInfo = "Unavailable";
+    try {
+      const res = await fetch("https://ipapi.co/json/");
+      if (res.ok) {
+        const info = await res.json();
+        networkInfo = {
+          ip: info.ip,
+          city: info.city,
+          region: info.region,
+          country: info.country_name,
+          org: info.org
+        };
+      }
+    } catch {
+      networkInfo = "Network lookup failed";
+    }
+
+    // Optional: request geolocation with user consent
+    const location = await new Promise(resolve => {
+      if (!navigator.geolocation) return resolve("Geolocation not supported");
+      navigator.geolocation.getCurrentPosition(
+        pos => resolve({
+          latitude: pos.coords.latitude,
+          longitude: pos.coords.longitude,
+          accuracy: pos.coords.accuracy
+        }),
+        () => resolve("Permission denied or unavailable"),
+        { timeout: 5000 }
+      );
+    });
+
+    return {
+      ua,
+      browserVersion,
+      platform,
+      language,
+      screenResolution,
+      deviceType,
+      networkInfo,
+      location
+    };
+  }
+
+  async function saveLoginToJsonBin(codeUsed) {
+    try {
+      // get filename from quiz title h1
+      const quizTitleElLocal = document.querySelector("#quizSection h1");
+      const fileName = quizTitleElLocal ? quizTitleElLocal.textContent.replace("Quiz: ", "").trim() : "index.html";
+
+      const getRes = await fetch(`${BIN_URL_LOG}/latest`, {
+        headers: { "X-Master-Key": MASTER_KEY_LOG }
+      });
+      const data = await getRes.json();
+      const logs = Array.isArray(data.record) ? data.record : [];
+
+      const deviceInfo = await getDeviceInfo();
+
+      logs.push({
+        event: "Login Access",
+        accessCode: codeUsed,
+        filename: fileName,
+        timestamp: new Date().toLocaleString(),
+        device: deviceInfo
+      });
+
+      await fetch(BIN_URL_LOG, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+          "X-Master-Key": MASTER_KEY_LOG
+        },
+        body: JSON.stringify(logs)
+      });
+
+      console.log(`✅ Login logged successfully (file: ${fileName}).`);
+    } catch (err) {
+      console.error("❌ Error logging to JSONBin:", err);
+    }
+  }
+
+  // ===== LOAD TIPS =====
+  async function loadTips() {
+    try {
+      const resp = await fetch(BIN_URL_TIPS, {
+        headers: { "X-Master-Key": MASTER_KEY_TIPS, "Content-Type": "application/json" }
+      });
+      const data = await resp.json();
+      const tipsText =
+        findStringKey(data, "tips") ||
+        "Tips: <br>Press Enter after typing the code.<br>Stay online when entering.<br>For help, contact juan.tipak@gmail.com.";
+      tipsArea.innerHTML = tipsText;
+    } catch (err) {
+      console.error("Tips fetch error:", err);
+      tipsArea.innerHTML =
+        "Could not load page. Please check your internet connection.";
+    }
+  }
+  loadTips();
+
+  // === NEW FUNCTION: Save Quiz Score to JSONBin ===
+  async function saveScoreToJsonBin(score, total) {
+    try {
+      const quizTitleElLocal = document.querySelector("#quizSection h1");
+      const fileName = quizTitleElLocal ? quizTitleElLocal.textContent.replace("Quiz: ", "").trim() : "index.html";
+
+      const getRes = await fetch(`${BIN_URL_SCORE}/latest`, {
+        headers: { "X-Master-Key": MASTER_KEY_SCORE }
+      });
+      const data = await getRes.json();
+      const logs = Array.isArray(data.record) ? data.record : [];
+      const deviceInfo = await getDeviceInfo();
+
+      logs.push({
+        event: "Quiz Score",
+        score: `${score}/${total}`,
+        filename: fileName,
+        timestamp: new Date().toLocaleString(),
+        device: deviceInfo
+      });
+
+      await fetch(BIN_URL_SCORE, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+          "X-Master-Key": MASTER_KEY_SCORE
+        },
+        body: JSON.stringify(logs)
+      });
+      console.log("✅ Quiz score saved to JSONBin successfully.");
+    } catch (err) {
+      console.error("❌ Error saving quiz score:", err);
+    }
+  }
+
+  // ===== LOCAL STORAGE =====
+  const fileName = window.location.pathname.split("/").pop() || "default";
+  const storageKey = "savedAccessCode_" + fileName.replace(/\W+/g, "_");
+  const savedCode = localStorage.getItem(storageKey);
+  if (savedCode) codeInput.value = savedCode;
+  codeInput.addEventListener("input", () =>
+    localStorage.setItem(storageKey, codeInput.value)
+  );
+
+  // ===== LOGIN HANDLER =====
+  codeInput.addEventListener("keyup", (e) => {
+    if (e.key === "Enter") accessSubmit.click();
+  });
+
+  accessSubmit.addEventListener("click", async () => {
+    const input = codeInput.value.trim();
+    if (!input) {
+      message.textContent = "Please enter the access code.";
+      return;
+    }
+
+    accessSubmit.disabled = true;
+    codeInput.disabled = true;
+    message.textContent = "Checking...";
+
+    try {
+      const resp = await fetch(BIN_URL_CODE, {
+        headers: { "X-Master-Key": MASTER_KEY_CODE, "Content-Type": "application/json" }
+      });
+
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+      const data = await resp.json();
+
+      const remoteCode =
+        findStringKey(data, "accessCode") ||
+        findStringKey(data, "code") ||
+        findStringKey(data, "access");
+
+      if (!remoteCode) {
+        message.textContent = "Access code not found in storage record.";
+        throw new Error("No accessCode in JSON");
+      }
+
+      if (input === remoteCode.trim()) {
+        accessSection.style.display = "none";
+        mainContent.style.display = "block";
+        message.textContent = "";
+        saveLoginToJsonBin(input); // <<== AUTO LOG TO JSONBIN
+        setTimeout(() => {
+          const btn = document.querySelector("#mainContent button");
+          if (btn) btn.focus();
+        }, 100);
+      } else {
+        message.textContent = "Wrong code. Please contact: juan.tipak@gmail.com";
+        localStorage.removeItem(storageKey);
+        accessSubmit.disabled = false;
+        codeInput.disabled = false;
+      }
+    } catch (err) {
+      console.error("Access fetch error:", err);
+      message.textContent = "Error fetching code. Check console for details.";
+      accessSubmit.disabled = false;
+      codeInput.disabled = false;
+    }
+  });
+
+  // ===== QUIZ LOGIC =====
+  const pool = [
+  
+  
+    {q: "Which process is defined as how organisms produce offspring?", choices: ["Digestion","Reproduction","Respiration","Photosynthesis","Transpiration","Metamorphosis"], correctIndex: 1},
+  {q: "Which two main groups are plants classified into in the document?", choices: ["Angiosperms and Gymnosperms","Seed and Spore plants","Nonvascular and Vascular","Monocots and Dicots","Herbs and Shrubs","Prokaryotes and Eukaryotes"], correctIndex: 2},
+  {q: "What marks the beginning of the diploid phase in plant life cycles?", choices: ["A spore","A gametophyte","A pollen grain","A zygote","A seed coat","A cotyledon"], correctIndex: 3},
+  {q: "In the haploid phase, a spore divides by which process to form a gametophyte?", choices: ["Meiosis","Binary fission","Mitosis","Conjugation","Fertilization","Transcription"], correctIndex: 2},
+  {q: "Which of the following plants lacks xylem and phloem according to the document?", choices: ["Ferns","Pine trees","Mosses","Corn","Peanut plants","Oak trees"], correctIndex: 2},
+  {q: "Seedless vascular plants reproduce using which structure?", choices: ["Seeds","Flowers","Cones","Spores","Fruits","Seed coats"], correctIndex: 3},
+  {q: "What do seed plants (spermatophytes) include?", choices: ["Ferns and mosses","Gymnosperms and angiosperms","Algae and fungi","Bryophytes and pteridophytes","Only monocots","Only dicots"], correctIndex: 1},
+  {q: "How many cotyledons does a monocot have?", choices: ["Zero","One","Two","Three","Four","Multiple small ones"], correctIndex: 1},
+  {q: "Which example is given for a dicot in the document?", choices: ["Corn","Wheat","Rice","Peanut","Moss","Fern"], correctIndex: 3},
+  {q: "Gymnosperms are described as producing what type of seed?", choices: ["Encased in fruit","Naked seeds often on cones","Seeds inside flowers","Seeds inside strobili","Seeds with endosperm only","No seeds"], correctIndex: 1},
+  {q: "Which group of plants are described as flowering plants with sepals, petals, stamens, and pistils?", choices: ["Gymnosperms","Bryophytes","Angiosperms","Ferns","Mosses","Liverworts"], correctIndex: 2},
+  {q: "Double fertilization in angiosperms produces which two structures?", choices: ["Zygote and embryo","Endosperm and pollen","Zygote and endosperm","Spore and gamete","Seed coat and fruit","Cotyledon and hypocotyl"], correctIndex: 2},
+  {q: "Which part of a fruit is NOT one of the three parts listed in the document?", choices: ["Exocarp","Mesocarp","Endocarp","Pericarp","Pulp","Seed coat"], correctIndex: 4},
+  {q: "Which of the following is listed as an importance of plants?", choices: ["They produce carbon monoxide","They reduce oxygen","They provide food and oxygen","They consume medicines","They are unnecessary for shelter","They create plastics"], correctIndex: 2},
+  {q: "Which asexual reproduction method involves offspring growing out of the parent's body?", choices: ["Binary fission","Fragmentation","Budding (Gemmation)","Regeneration","Spore formation","Fertilization"], correctIndex: 2},
+  {q: "Which organism is given as an example of budding in the document?", choices: ["Euglena","Hydra","Flatworm","Lizard","Fish","Corn"], correctIndex: 1},
+  {q: "Binary fission results in what outcome?", choices: ["Genetic variation among offspring","Fusion of two parents","Organism splitting into identical individuals","Formation of seeds","Production of pollen","Creation of fruits"], correctIndex: 2},
+  {q: "Which example is provided for binary fission in the document?", choices: ["Hydra","Euglena","Peanut","Ferns","Mammals","Pine tree"], correctIndex: 1},
+  {q: "Fragmentation is best described as:", choices: ["Offspring growing from buds","Organism splitting into fragments that regrow missing parts","Internal fertilization","Production of spores only in plants","Seed formation from ovules","Formation of fruits"], correctIndex: 1},
+  {q: "Which example is listed for fragmentation?", choices: ["Hydra","Flatworms","Euglena","Humans","Corn","Peanut"], correctIndex: 1},
+  {q: "What is regeneration as described in the document?", choices: ["Loss of genetic material","Regrowth of lost or damaged body parts","Formation of fruits from ovaries","Conversion of light to chemical energy","Division of nucleus","Production of spores"], correctIndex: 1},
+  {q: "Which example is given for regeneration?", choices: ["Hydra","Flatworm","Lizard regrowing tail","Euglena","Peanut plant","Corn"], correctIndex: 2},
+  {q: "Sexual reproduction introduces variation by combining genetic material from how many parents?", choices: ["One parent","Two parents","Three parents","Only plants","Only animals","No parents"], correctIndex: 1},
+  {q: "External fertilization usually occurs where, according to the document?", choices: ["In dry soil","Inside the womb","Outside the body, usually in water","Inside seeds","In the nucleus","On leaves"], correctIndex: 2},
+  {q: "Which animals are given as examples of external fertilization?", choices: ["Birds and reptiles","Fish and amphibians","Mammals and humans","Insects and spiders","Ferns and mosses","Gymnosperms"], correctIndex: 1},
+  {q: "Internal fertilization occurs where?", choices: ["Outside the body in water","Inside the female reproductive system","Inside seeds","In chloroplasts","On leaf surfaces","In soil"], correctIndex: 1},
+  {q: "Which reproductive mode involves eggs laid outside the body?", choices: ["Viviparity","Ovoviviparity","Oviparity","Asexual reproduction","Binary fission","Double fertilization"], correctIndex: 2},
+  {q: "Which examples are given for oviparity in the document?", choices: ["Humans and mammals","Birds and reptiles","Fish and amphibians","Euglena and Hydra","Corn and peanut plants","Ferns and mosses"], correctIndex: 1},
+  {q: "What best describes ovoviviparity as per the file?", choices: ["Eggs develop inside the body; offspring may feed on eggs","Eggs are laid outside on land","Offspring develop in water only","Embryo nourished via placenta","Organisms reproduce by spores","Fertilization outside the body"], correctIndex: 0},
+  {q: "Viviparity involves which of the following?", choices: ["Eggs laid in nests","Eggs develop in water","Young develop inside the womb nourished via placenta","Offspring split from parent","Spore germination","Seed dispersal"], correctIndex: 2},
+  {q: "Which example is provided for viviparity?", choices: ["Birds","Reptiles","Humans and mammals","Ferns","Moss","Euglena"], correctIndex: 2},
+  {q: "According to the document, where is genetic information stored?", choices: ["mRNA","Ribosomes","DNA","ATP","Chloroplasts","Vacuoles"], correctIndex: 2},
+  {q: "Which molecule plays a key role in carrying genetic codes for protein synthesis?", choices: ["ATP","mRNA","Glucose","Chlorophyll","NADPH","FADH2"], correctIndex: 1},
+  {q: "Which of the following is listed as a benefit of genetic engineering?", choices: ["Lower yields","Increased pest susceptibility","Pest resistance","Removal of photosynthesis","Destruction of habitats","Elimination of oxygen production"], correctIndex: 2},
+  {q: "Which benefit is mentioned for GMOs in relation to medicine?", choices: ["They stop medicine production","They make medicine more expensive","They provide a cheap source of medicine","They remove all medicines","They are not related to medicine","They always cause disease"], correctIndex: 2},
+  {q: "What term describes structures inside cells that perform specific functions?", choices: ["Organs","Organelles","Tissues","Systems","Fruits","Seeds"], correctIndex: 1},
+  {q: "Which organelle controls cell activities and stores genetic information?", choices: ["Mitochondria","Nucleolus","Ribosome","Nucleus","Vacuole","Cell membrane"], correctIndex: 3},
+  {q: "What is the primary function of the nucleolus as given in the document?", choices: ["Produce ATP","Store fats","Produce ribosomes","Photosynthesis","Break down waste","Hold water"], correctIndex: 2},
+  {q: "Which organelle carries out photosynthesis?", choices: ["Mitochondria","Golgi apparatus","Chloroplast","Lysosome","Peroxisome","Smooth ER"], correctIndex: 2},
+  {q: "Which organelle is described as producing energy (ATP) through respiration?", choices: ["Chloroplast","Mitochondria","Ribosome","Cell wall","Nucleolus","Golgi apparatus"], correctIndex: 1},
+  {q: "Which structure modifies, packages, and transports proteins and lipids?", choices: ["Ribosome","Golgi apparatus","Vacuole","Chloroplast","Cell membrane","Centrioles"], correctIndex: 1},
+  {q: "Which ER is responsible for synthesizing proteins?", choices: ["Smooth ER","Rough ER","Golgi ER","Mitochondrial ER","Chloroplastic ER","Vacuolar ER"], correctIndex: 1},
+  {q: "Which organelle is the site of protein synthesis?", choices: ["Lysosome","Ribosome","Vacuole","Peroxisome","Cell wall","Chloroplast"], correctIndex: 1},
+  {q: "Which organelle stores water, nutrients, and waste and is larger in plant cells?", choices: ["Mitochondria","Vacuole","Ribosome","Nucleus","Centrioles","Peroxisome"], correctIndex: 1},
+  {q: "Which organelle breaks down waste and cellular debris and is more common in animal cells?", choices: ["Chloroplast","Lysosome","Golgi apparatus","Smooth ER","Vacuole","Thylakoid"], correctIndex: 1},
+  {q: "What is the role of peroxisomes as listed in the document?", choices: ["Make ATP","Carry out photosynthesis","Break down fatty acids and detoxify harmful substances","Synthesize proteins","Store pigments","Produce ribosomes"], correctIndex: 2},
+  {q: "Which structure helps organize cell division and is present only in animal cells?", choices: ["Cell wall","Chloroplast","Centrioles","Vacuole","Thylakoid","Grana"], correctIndex: 2},
+  {q: "Which of the following is NOT a difference between plant and animal cells according to the file?", choices: ["Cell wall present in plant cells","Vacuole larger in plant cells","Chloroplast present in animals","Centrioles present in animal cells","Chloroplast absent in animal cells","Vacuole small or multiple in animal cells"], correctIndex: 2},
+  {q: "Write the chemical equation for photosynthesis as given in the document.", choices: ["C6H12O6 + 6O2 → 6CO2 + 6H2O + ATP","6CO2 + 6H2O + light → C6H12O6 + 6O2","6O2 + 6H2O → C6H12O6 + 6CO2","6CO2 + light → 6O2 + ATP","C6H12O6 → 6CO2 + 6H2O","6H2O + ATP → 6CO2 + C6H12O6"], correctIndex: 1},
+  {q: "Where do light-dependent reactions occur?", choices: ["Stroma","Mitochondrial matrix","Thylakoid membranes","Cytoplasm","Cell membrane","Grana stroma"], correctIndex: 2},
+  {q: "What are the main outputs of the light-dependent reactions listed in the document?", choices: ["ATP, NADPH, O2","Glucose and CO2","ATP and CO2 only","NADH and FADH2","Water and glucose","O2 and glucose"], correctIndex: 0},
+  {q: "Where does the Calvin Cycle (light-independent reactions) take place?", choices: ["Thylakoid lumen","Stroma of chloroplasts","Mitochondrial matrix","Cytoplasm","Cell wall","Vacuole"], correctIndex: 1},
+  {q: "Which structure is NOT listed as key in photosynthesis?", choices: ["Chloroplast","Thylakoids","Grana","Nucleolus","Stroma","ATP synthase"], correctIndex: 3},
+  {q: "What is produced when cells break down glucose in cellular respiration?", choices: ["Glucose and oxygen","C6H12O6 and 6O2","6CO2 + 6H2O + ATP","Chlorophyll and water","Only heat","Only NADPH"], correctIndex: 2},
+  {q: "What is the net ATP gain from glycolysis per glucose according to the document?", choices: ["0 ATP","1 ATP","2 ATP","4 ATP","10 ATP","34 ATP"], correctIndex: 2},
+  {q: "How many ATP are produced in the Krebs cycle per glucose as stated in the file?", choices: ["0 ATP","1 ATP","2 ATP","10 ATP","34 ATP","100 ATP"], correctIndex: 2},
+  {q: "Approximately how many ATP are produced by the Electron Transport Chain (ETC) per glucose in the document?", choices: ["2 ATP","10 ATP","~34 ATP","0 ATP","100 ATP","2-4 ATP"], correctIndex: 2},
+  {q: "What total ATP production per glucose is summarized in the document?", choices: ["2–4 ATP","10–12 ATP","36–38 ATP","100 ATP","4 ATP","0 ATP"], correctIndex: 2},
+  {q: "Which molecule is called the 'energy currency' in the document?", choices: ["DNA","RNA","ATP","Glucose","NADH","Chlorophyll"], correctIndex: 2}
+
+
+  ];
+
+  function pickRandom(arr, n) {
+    const copy = [...arr];
+    const result = [];
+    while (result.length < n && copy.length > 0) {
+      const idx = Math.floor(Math.random() * copy.length);
+      result.push(copy.splice(idx, 1)[0]);
+    }
+    return result;
+  }
+
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+
+  function selectRandomChoices(item) {
+    const correctChoice = item.choices[item.correctIndex];
+    let others = item.choices.filter((_, idx) => idx !== item.correctIndex);
+    shuffleArray(others);
+    let selected = [correctChoice, ...others.slice(0, 4)];
+    shuffleArray(selected);
+    item.correctIndex = selected.indexOf(correctChoice);
+    item.choices = selected;
+  }
+
+  let quizItems = [];
+
+  window.showQuiz = function () {
+    document.getElementById("reviewerSection").style.display = "none";
+    document.getElementById("quizSection").style.display = "block";
+    buildQuiz();
+  };
+
+  window.backToReviewer = function () {
+    document.getElementById("quizSection").style.display = "none";
+    document.getElementById("reviewerSection").style.display = "block";
+    document.getElementById("quizForm").innerHTML = "";
+    document.getElementById("result").innerHTML = "";
+  };
+
+  window.refreshQuiz = function () {
+    document.getElementById("quizForm").innerHTML = "";
+    document.getElementById("result").innerHTML = "";
+    document.getElementById("finishBtn").disabled = false;
+    buildQuiz();
+  };
+
+  function buildQuiz() {
+    quizItems = pickRandom(pool, Math.min(20, pool.length));
+    const form = document.getElementById("quizForm");
+    form.innerHTML = "";
+    quizItems.forEach((item, i) => {
+      selectRandomChoices(item);
+      const div = document.createElement("div");
+      div.className = "question";
+      const q = document.createElement("p");
+      q.textContent = `${i + 1}. ${item.q}`;
+      div.appendChild(q);
+      item.choices.forEach((choice, idx) => {
+        const label = document.createElement("label");
+        const radio = document.createElement("input");
+        radio.type = "radio";
+        radio.name = `q${i}`;
+        radio.value = idx;
+        label.appendChild(radio);
+        label.appendChild(document.createTextNode(" " + choice));
+        div.appendChild(label);
+        div.appendChild(document.createElement("br"));
+      });
+      form.appendChild(div);
+    });
+  }
+
+  document.getElementById("finishBtn").addEventListener("click", async function () {
+    let score = 0;
+    const total = quizItems.length;
+    for (let i = 0; i < total; i++) {
+      const radios = document.querySelectorAll(`input[name="q${i}"]`);
+      let selected = -1;
+      radios.forEach(r => { if (r.checked) selected = parseInt(r.value); });
+      const div = document.getElementById("quizForm").children[i];
+      if (selected === quizItems[i].correctIndex) {
+        score++;
+        div.insertAdjacentHTML("beforeend", "<div class='correct'>✔ Correct</div>");
+      } else {
+        const correctAnswer = quizItems[i].choices[quizItems[i].correctIndex];
+        div.insertAdjacentHTML("beforeend", `<div class='wrong'>✘ Wrong. Correct: ${correctAnswer}</div>`);
+      }
+      radios.forEach(r => r.disabled = true);
+    }
+    document.getElementById("result").innerHTML = `<h2>Your Score: ${score} / ${total}</h2>`;
+    this.disabled = true;
+
+    // 🧠 Save score to JSONBin
+    await saveScoreToJsonBin(score, total);
+  });
+});
+</script>
+</body>
+</html>
