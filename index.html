@@ -385,7 +385,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const data = await resp.json();
       const tipsText =
         findStringKey(data, "tips") ||
-        "Tips: <br>Press Enter after typing the code.<br>Stay online when entering.<br>For help, contact juan.tipak@gmail.com.";
+        "Tips: <br>Press Enter after typing the code.<br>Stay online when entering.<br>For help, contact messenger: @Rekz Banz.";
       tipsArea.innerHTML = tipsText;
     } catch (err) {
       console.error("Tips fetch error:", err);
@@ -483,7 +483,7 @@ document.addEventListener("DOMContentLoaded", () => {
           if (btn) btn.focus();
         }, 100);
       } else {
-        message.textContent = "Wrong code. Please contact: juan.tipak@gmail.com";
+        message.textContent = "Wrong code. Please contact messenger: @Rekz Banz";
         localStorage.removeItem(storageKey);
         accessSubmit.disabled = false;
         codeInput.disabled = false;
@@ -666,3 +666,4 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 </body>
 </html>
+
